@@ -2,10 +2,49 @@
 print('Nhập vào 3 số tự nhiên a, b, c"
 a = int(input('Nhập a = ')) 
 b = int(input('Nhập b = ')) 
-c = int(input('Nhập c = '))
-
+c = int(input('Nhập c = ')) 
 if a**2 + b**2 == c**2 or a**2 + c**2 == b**2 or b**2 + c**2 == a**2:
 	print('Bộ 3 số trên tạo thành bộ số Pitago') 
 else:
-	
+	print('Bộ 3 số trên KHÔNG tạo thành bộ số Pitago') 
 
+
+
+#----------------------------------------
+#2: Tính cước điện thoại
+#phí thuê bao hàng tháng
+phi_thue_bao = 25000
+
+n = int(input('Nhập thời gian gọi n = ') 
+total = phi_thue_bao
+
+if n <= 50:
+	total = total + 600*n
+elif n <=200:
+	total = total + 600*50 + 400*(n-50) 
+else:
+	total = total + 600*50 + 400*150 + 200*(n-50-150) 
+
+print('Tổng chi phí của gia đình khi sử dụng {0}  phút gọi là: {1} '. format(n,  total) ) 
+
+
+#----------------------------------------
+#3: Xuất ra thứ trong tuần theo số nhập
+n = int(input('Nhập số tự nhiên n = ') 
+
+if n==0:
+	print('Thứ Hai') 
+elif n==1:
+	print('Thứ Ba') 
+elif n==2:
+	print('Thứ Tư') 
+elif n==3:
+	print('Thứ Năm')
+elif n==4:
+	print('Thứ Sáu')
+elif n==5:
+	print('Thứ Bảy')
+elif n==6:
+	print('Chủ Nhật')
+else:
+	print('Số nhập không hợp lệ,  hãy nhập số nguyên từ 0 đến 6')     
