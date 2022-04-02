@@ -1,0 +1,11 @@
+#1: Kiểm tra 3 số tự nhiên có tạo thành bộ số Pitago hay không? 
+print('Nhập vào 3 số tự nhiên a, b, c"
+a = int(input('Nhập a = ')) 
+b = int(input('Nhập b = ')) 
+c = int(input('Nhập c = '))
+
+if a**2 + b**2 == c**2 or a**2 + c**2 == b**2 or b**2 + c**2 == a**2:
+	print('Bộ 3 số trên tạo thành bộ số Pitago') 
+else:
+	
+
