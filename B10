@@ -1,0 +1,79 @@
+
+
+
+
+
+
+
+
+A = float(input("Nhập điểm 15p: ")) 
+B = float(input("Nhập điểm  giữa kì: ")) 
+C = float(input("Nhập điểm cuối kì: "))
+
+If A < 0 or A>10 or B<0 or B>10 or C<0 or C>10:
+	Print("Lỗi nhập dữ liệu") 
+Else:
+Dtb = (A+B*1. 5+C*2) /4. 5
+If dtb >=8:
+Print("Loại Giỏi") 
+Elif dtb >=6. 5:
+Print("Loại trung bình") 
+
+
+
+A = int(input("Nhập A: ")) 
+B = int(input("Nhập B: ")) 
+C = INT(input("Nhập C: "))
+IF A ==0:
+	IF B==0:
+			PRINT(c) 
+	Else:
+			If B==1:
+				B=''
+			Elif b==-1:
+				B = '-'
+			IF C ==0:
+				PRINT('{0} X', FORMAT(B) ) 
+			Elif c>0:
+				Print('{0} x +{1} '. Format(b,  c)) 
+			Else:
+				Print({0} x -{1}'. Format(b, -c)) 
+Else:
+	If a==1:
+		A=''
+	Elif a==-1:
+		A='-'
+	If b ==0:
+		If c == 0:
+			Print('{0} x^2.' Format(a)) 
+		Elif c>0:
+			Print('{0} x^2 + {1}'. Format(a, c))
+		Else:
+			 Print('{0} x^2 - {1}'. Format(a, -c))
+	Else:
+		If b== 1:
+			B=''
+		Elif b==-1:
+			B='-'
+		If c ==0:
+			If b >1:
+				Print('{0} x^2 +{1} x'. Format(a, b)) 
+			If b<-1:
+				Print('{0} x^2 -{1} x'. Format(a, -b)) 
+		Elif c>0:
+			If b >1:
+				Print('{0} x^2 +{1} x + {2} '. Format(a, b, c)) 
+			If b<-1:
+				Print('{0} x^2 -{1} x + {2} '. Format(a, -b, c))
+		Else:
+			If b >1:
+				Print('{0} x^2 +{1} x - {2} '. Format(a, b, c)) 
+			If b<-1:
+				Print('{0} x^2 -{1} x - {2} '. Format(a, -b, c))	 
+	
+
+
+
+
+
+ 
