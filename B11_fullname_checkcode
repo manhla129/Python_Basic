@@ -15,19 +15,14 @@ code = '4902778120972'
 
 C = int(code[12])
 
-i=0
-A=0
+i = 0
+A, B = 0, 0
 while i<12:
   if i%2 == 0:
     A += int(code[i])
+  else:
+    B += int(code[i])
   i += 1
-
-j=0
-B=0
-while j<12:
-  if j%2 == 0:
-    B += int(code[j])
-  j += 1 
 
 D = A + 3*B
 if D%10 != 0:
