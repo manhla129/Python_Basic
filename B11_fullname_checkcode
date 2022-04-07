@@ -1,0 +1,41 @@
+# Xuất họ tên theo định dạng tiêu chuẩn
+hoten = '       lÃ văN         MẠnH         '
+print(hoten) 
+
+hoten = hoten.strip().lower().split(' ')
+
+for i in hoten:
+  if i != '':
+    i = i[0].upper() + i[1:]
+    print(i, end=' ')
+    
+
+# Check mã code đúng hay sai
+code = '4902778120972'
+
+C = int(code[12])
+
+i=0
+A=0
+while i<12:
+  if i%2 == 0:
+    A += int(code[i])
+  i += 1
+
+j=0
+B=0
+while j<12:
+  if j%2 == 0:
+    B += int(code[j])
+  j += 1 
+
+D = A + 3*B
+if D%10 != 0:
+  F = 10 - (D%10)
+else:
+  F = 0
+
+if F == C:
+  print('Mã vạch ĐÚNG')
+else:
+  print('Mã vạch SAI')
