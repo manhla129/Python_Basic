@@ -1,0 +1,54 @@
+#1 In ra chuỗi giảm dần dài nhất
+
+text = '823748236482'
+i = 0
+chuoi = ''
+while i < len(text)-1:
+  if int(text[i]) < int(text[i+1]):
+    chuoi += text[i] +'-'
+  else:
+    chuoi += text[i]
+  i += 1
+
+if chuoi[-1] == '-':
+  chuoi = chuoi
+else:
+  if int(chuoi[-1]) > int(text[-1]):
+    chuoi += text[-1]
+chuoi = chuoi.split('-')
+
+max = 0
+print("Chuỗi giảm dần dài nhất: ')
+for i in chuoi:
+  if len(i) >=max:
+    max = len(i)
+for i in chuoi:
+  if len(i) == max:
+    print(i)
+
+
+#2 check điểm P(x, y) có thuộc vùng không?
+# vùng giới hạn bởi nửa đường tròn tâm 0, 0 bán kính 2 về phía trục x âm
+# và 2 đường thẳng đi qua các điểm:
+# đường thẳng 1 đi qua: 0,2 & 6,0
+# đường thẳng 2 đi qua: 0,-2 & 6,0
+
+print('Nhập tọa độ của P:')
+x = float(input('x= '))
+y = float(input('y= '))
+
+if x < -2 or x > 6 or y < -2 or y > 2:
+  print('P không thuộc vùng')
+elif x >= -2 and x <=0:
+  d = (x**2 + y**2)**0.5
+  if d <=2:
+    print('P thuộc vùng')
+  else:
+    print('P không thuộc vùng')
+else:
+  ptd1 = x/3 + y - 2
+  ptd2 = -x/3 + y + 2
+  if ptd1<=0 and ptd2 >=0:
+    print('P thuộc vùng')
+  else:
+    print('P không thuộc vùng')
