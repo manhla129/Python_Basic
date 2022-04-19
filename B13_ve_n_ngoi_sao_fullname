@@ -1,0 +1,49 @@
+#1 vẽ n ngôi sao
+
+import turtle
+tl = turtle.Turtle()
+tl.shape('turtle')
+
+n = int(input('Nhập n: '))
+tl.penup()
+tl.backward(30*n)
+tl.pendown()
+
+for i in range(n):
+  tl.fillcolor('yellow')
+  tl.begin_fill()
+  for j in range(5):
+    tl.forward(50)
+    tl.right(144)
+  tl.end_fill()
+  tl.penup()
+  tl.forward(60)
+  tl.pendown()
+
+turtle.done()
+
+#2 Chuyển tên sang không dấu
+text = ' nGuyễN  thỊ   pHưƠng   tHảO     '
+text2 =''
+for i in text:
+  if i in 'aáàảãạâấầẩẫậăắằẳẵạ':
+    i = 'a'
+  elif i in 'iíìỉĩị':
+    i = 'i'
+  elif i in 'eéèẻẽẹêếềểễệ':
+    i = 'e'
+  elif i in 'uúùủũụưứừửữự':
+    i = 'u'
+  else:
+    i = i
+  text2 += i
+text2 = text2.split()
+fullname = ''
+for i in text2:
+  i = i[0].upper + i[1:]
+  fullname += i + ' '
+fullname = fullname.strip()
+print(fullname)
+
+
+  
