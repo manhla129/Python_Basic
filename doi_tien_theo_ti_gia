@@ -1,0 +1,14 @@
+Bước 1: Nhập số tiền USD cần đổi
+
+Bước 2: Nhập tỉ giá USD/VND 
+
+Bước 3: Tính toán ra số tiền VND theo tỉ giá và số tiền USD nhập vào bên trên
+
+Bước 4: In ra kết quả
+
+usd = float(input('Nhập USD: ')
+ti_gia = float(input('Nhập tỉ giá: ')
+
+vnd = usd * ti_gia
+
+print('Quy đổi ra tiền VNĐ: ',vnd)
