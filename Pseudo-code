@@ -1,4 +1,0 @@
-for i in range(6) 
-	move_forward(100)
-  turn_right(60)
-  

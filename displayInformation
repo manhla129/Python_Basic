@@ -1,4 +1,0 @@
-Name= 'Lã Văn Mạnh'
-Age = '24'
-Address = 'Hà Nội'
-print('Name: {0} \nAge: {1} \nAddress: {2}'.format(Name, Age, Address)) 
