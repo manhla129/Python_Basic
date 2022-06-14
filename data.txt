@@ -1,0 +1,3 @@
+Nước nào thuộc châu Á?|Việt Nam|Pháp|Mexico|Singapor|True|False|False|False
+Paris là thủ đô của nước nào?|Đức|Pháp|Hà Lan|Bỉ|False|True|False|False
+Nước nào có nhiều múi giờ nhất thế giới?|Nga|Pháp|Canada|Mỹ|False|True|False|False
